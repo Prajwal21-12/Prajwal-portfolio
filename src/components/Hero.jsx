@@ -29,12 +29,12 @@ function Hero() {
             GitHub
           </a>
           <a
-                href="/Prajwal-Harihar-Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="secondary-btn"
-                >
-                View Resume 
+              href={`${import.meta.env.BASE_URL}Prajwal-Harihar-Resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="secondary-btn"
+            >
+              View Resume 
           </a>
           <a
             href="https://www.linkedin.com/in/prajwal-harihar-9261a1341/"
