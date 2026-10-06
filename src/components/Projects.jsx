@@ -1,23 +1,23 @@
 function Projects() {
   const projects = [
     {
-    title: "Smart Crop Advisory System",
-    category: "AI / Full-Stack",
-    description:
+      title: "Smart Crop Advisory System",
+      category: "AI / Full-Stack",
+      description:
         "A smart agriculture application designed to provide farmers with useful crop-related recommendations and advisory support.",
-    tech: ["Python", "AI/ML", "React", "REST API"],
-    github: "https://github.com/Prajwal21-12/Smart_Crop_Advisory_System",
-    demo: "https://smart-crop-advisory-system-hl25dy3fp-match-mind-ai.vercel.app/",
+      tech: ["Python", "AI/ML", "React", "REST API"],
+      github: "https://github.com/Prajwal21-12/Smart_Crop_Advisory_System",
+      demo: "https://smart-crop-advisory-system-hl25dy3fp-match-mind-ai.vercel.app/",
     },
 
     {
-    title: "Snap & Study",
-    category: "AI / Generative AI",
-    description:
+      title: "Snap & Study",
+      category: "AI / Generative AI",
+      description:
         "An AI-powered study assistant built with Streamlit and Gemini that helps students ask questions, upload images, and receive AI-generated explanations.",
-    tech: ["Python", "Streamlit", "Gemini AI"],
-    github: "https://github.com/Prajwal21-12/snap-study",
-    demo: "https://snap-study-viukrewf78gbjgtaisflwt.streamlit.app",
+      tech: ["Python", "Streamlit", "Gemini AI"],
+      github: "https://github.com/Prajwal21-12/snap-study",
+      demo: "https://snap-study-viukrewf78gbjgtaisflwt.streamlit.app",
     },
 
     {
@@ -34,7 +34,6 @@ function Projects() {
   return (
     <section className="projects section" id="projects">
       <div className="section-container">
-
         <p className="section-label">FEATURED PROJECTS</p>
 
         <h2>
@@ -45,7 +44,6 @@ function Projects() {
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
-
               <div className="project-top">
                 <span className="project-category">
                   {project.category}
@@ -76,16 +74,12 @@ function Projects() {
 
               <div className="project-tech">
                 {project.tech.map((technology) => (
-                  <span key={technology}>
-                    {technology}
-                  </span>
+                  <span key={technology}>{technology}</span>
                 ))}
               </div>
-
             </article>
           ))}
         </div>
-
       </div>
     </section>
   )
